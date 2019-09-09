@@ -1,2 +1,1 @@
-# Capstone-Design
-Undergraduate Course
+# Blink
