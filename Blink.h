@@ -8,8 +8,8 @@ class Blink
     int delay;
   public:
     Blink(int pin);
-    void on(int pin);
-    void off(int pin);
+    void on(int delay);
+    void off(int delay);
 };
 
 
