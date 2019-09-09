@@ -1,16 +1,13 @@
+#include <Blink.h>
+
+Blink blink(D4);
+
 void setup() {
   Serial.begin(115200);
-  pinMode(0, OUTPUT);
-  pinMode(4, OUTPUT);
-  digitalWrite(0, LOW);
-  digitalWrite(4, LOW);
+  Serial.println("\nBlink Version 1.0 YoungGyu_Jeon");
 }
 
-void loop() {
-  delay(1000);
-  digitalWrite(4, HIGH);
-  Serial.println("high");
-  delay(1000);
-  digitalWrite(4, LOW);
-  Serial.println("low");
+void loop(){
+  blink.on(500);
+  blink.off(300);
 }
